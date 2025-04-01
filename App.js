@@ -16,7 +16,11 @@ export default function App() {
   return (
     /* Só um tipo de navigation container durante o projeto */
     <NavigationContainer>
-      <BottomTab.Navigator>
+      <BottomTab.Navigator initialRouteName='Login' screenOptions={{
+        headerStyle: {backgroundColor: '#f99'},
+        headerTintColor: 'white',
+        tabBarActiveBackgroundColor: '#dda0dd'
+      }}>
         <BottomTab.Screen name='Login' component={Login} 
         options={{
           tabBarIcon:() =>
