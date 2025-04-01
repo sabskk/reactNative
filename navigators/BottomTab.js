@@ -7,9 +7,7 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Feather from '@expo/vector-icons/Feather';
-
-export default function App() {
+export default function BottomTab() {
 
   const BottomTab = createBottomTabNavigator(); 
 
@@ -17,16 +15,8 @@ export default function App() {
     /* Só um tipo de navigation container durante o projeto */
     <NavigationContainer>
       <BottomTab.Navigator>
-        <BottomTab.Screen name='Login' component={Login} 
-        options={{
-          tabBarIcon:() =>
-          <Feather name="pen-tool" size={24} color="black" />
-          }} />
-        <BottomTab.Screen name='Home' component={Home} 
-        options={{
-          tabBarIcon:() =>
-          <Feather name="home" size={24} color="black" />
-          }} />
+        <BottomTab.Screen name='Login' component={Login}/>
+        <BottomTab.Screen name='Home' component={Home}/>
       </BottomTab.Navigator>
     </NavigationContainer>
   );
