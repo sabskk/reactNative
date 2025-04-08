@@ -4,8 +4,8 @@ export default function Login({navigation}){
     return(
         <View style={styles.container}>
             <View style={styles.header}>
-                <Image style={styles.logo} source={{uri:"https://s2-g1.glbimg.com/nvcgNY-D57tVdJ6FmYtAiPQbp1I=/0x0:242x251/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/l/K/JUm2dRSriCk1pIBCJ7Mw/farmington.png"}}/>
-                <Text style={styles.title}> Colégio Farmington </Text>
+                <Image style={styles.logo} source={{uri:"https://upload.wikimedia.org/wikipedia/commons/6/6e/JoJo%27s_Bizarre_Adventure_logo.png"}}/>
+                <Text style={styles.title}> Site Bizarro </Text>
             </View>
             <View style={styles.logincontent}>
                 <Text style={styles.logintitle}> Login de Usuário </Text>
@@ -19,7 +19,7 @@ export default function Login({navigation}){
                     placeholderTextColor={'black'}
                     style={styles.txtinput}
                 />
-                <Button title='Login' color={'red'} onPress={()=>navigation.navigate('Home')}/>
+                <Button title='Login' color={'#e9186d'} onPress={()=>navigation.navigate('Home')}/>
             </View>
         </View>
     )
@@ -34,20 +34,23 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-evenly',
-        backgroundColor: '#2887c1',
+        backgroundColor: '#a4e8e2',
+        padding: 15,
     },
     title:{
         fontSize: '20px',
         alignSelf: 'center',
+        fontWeight: 'bolder',
     },
     logintitle:{
         fontSize: '20px',
         alignSelf: 'center',
         marginBottom: '25px',
+        fontWeight: 'bolder',
     },
     logo:{
-        width: 100,
-        height: 100,
+        width: 150,
+        height: 70,
     },
     content:{
         flexDirection: 'row',
