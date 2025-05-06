@@ -1,6 +1,7 @@
 import {View, Text, Image, Button, StyleSheet, ScrollView} from 'react-native';
 
 export default function Feed({navigation}){
+
     return(
         // o scroll view só funciona quando tem texto o suficiente
             <View style={styles.container}>

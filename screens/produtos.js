@@ -1,5 +1,6 @@
 import {View, Text, StyleSheet, Image, FlatList} from 'react-native';
 import {useState} from 'react';
+import ProductCard from '../componentes/productCard';
 
 export default function Produto(){
 
@@ -33,14 +34,20 @@ export default function Produto(){
             <FlatList
                 data={produtos}
                 renderItem={({item}) => (
-                    <View>
-                        <Text style={styles.txt}> —————————— </Text>
-                        <Image style={styles.foto} source={{uri:item.foto}}/>
-                        <View style={styles.card}>
-                            <Text style={styles.txt}> {item.nome} </Text>
-                            <Text style={styles.txt}> R${item.valor.toFixed(2)} </Text>
-                        </View>
-                    </View>
+                    // <View>
+                    //     <Text style={styles.txt}> —————————— </Text>
+                    //     <Image style={styles.foto} source={{uri:item.foto}}/>
+                    //     <View style={styles.card}>
+                    //         <Text style={styles.txt}> {item.nome} </Text>
+                    //         <Text style={styles.txt}> R${item.valor.toFixed(2)} </Text>
+                    //     </View>
+                    // </View>
+                    <ProductCard
+                    foto = {item.foto}
+                    id = {item.id}
+                    nome = {item.nome}
+                    valor = {item.valor}
+                    />
                 )}
                 keyExtractor={item => item.id}
             />
