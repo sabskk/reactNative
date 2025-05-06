@@ -16,6 +16,18 @@ export default function Feed({navigation}){
                     <Image style={styles.img} source={{uri:"https://upload.wikimedia.org/wikipedia/en/b/b4/Giorno_Giovanna.png"}}/>
                     <Button title='Saiba Mais' color={'#e9186d'} onPress={()=>navigation.navigate('Home')}/>
                 </View>
+                <View style={styles.content}>
+                    <Text style={styles.title}> Bruno Bucciarati </Text>
+                    <Text style={styles.txt}>O líder da equipe de Giorno, ele é um dos membros mais importantes e leais da Passione. Seu Stand, Sticky Fingers, tem a habilidade de criar zíperes em objetos e pessoas, permitindo diversas estratégias de combate.</Text>
+                    <Image style={styles.img} source={{uri:"https://static.wikia.nocookie.net/jjba/images/c/cc/BrunoManga.webp/revision/latest/scale-to-width/360?cb=20230408142833&path-prefix=pt-br"}}/>
+                    <Button title='Saiba Mais' color={'#e9186d'} onPress={()=>navigation.navigate('Home')}/>
+                </View>
+                <View style={styles.content}>
+                    <Text style={styles.title}> Leone Abbacchio </Text>
+                    <Text style={styles.txt}>Ex-policial, Abbacchio se junta à Passione após uma tragédia pessoal. Seu Stand, Moody Blues, permite que ele reveja eventos passados, o que o torna crucial em investigações.</Text>
+                    <Image style={styles.img} source={{uri:"https://static.wikia.nocookie.net/jjba/images/c/cc/BrunoManga.webp/revision/latest/scale-to-width/360?cb=20230408142833&path-prefix=pt-br"}}/>
+                    <Button title='Saiba Mais' color={'#e9186d'} onPress={()=>navigation.navigate('Home')}/>
+                </View>
                 </ScrollView>
             </View>
     )
@@ -50,7 +62,6 @@ const styles = StyleSheet.create({
         color: '#e9186d',
         marginBottom: '10px',
     },
-    
     txt:{
         textAlign: 'center',
         marginBottom: '10px',

@@ -3,6 +3,7 @@ import Home from './screens/home';
 import Login from './screens/login';
 import Feed from './screens/feed';
 import Count from './screens/contador';
+import Produto from './screens/produtos';
 
 import 'react-native-gesture-handler';
 
@@ -54,10 +55,16 @@ function BottomTabs(){
         <Feather name="file-text" size={24} color="white" />
       }} />
 
-    <BottomTab.Screen name='Count' component={Count} 
+      <BottomTab.Screen name='Contador' component={Count} 
       options={{
         tabBarIcon:() =>
         <Feather name="plus-circle" size={24} color="white" />
+      }} />
+
+      <BottomTab.Screen name='Produto' component={Produto} 
+      options={{
+        tabBarIcon:() =>
+        <Feather name="shopping-cart" size={24} color="white" />
       }} />
     </BottomTab.Navigator>
   );
