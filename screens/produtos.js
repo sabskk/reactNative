@@ -5,16 +5,16 @@ import ProductCard from '../componentes/productCard';
 export default function Produto(){
 
     const [produtos, setProdutos] = useState([
-        {foto:'https://www.quitandatomio.com.br/upload/1085343213-beneficios-da-manga-palmer-para-a-saude.jpg', id: '1', nome: 'Manga', valor: 2.00},
-        {foto:'https://www.hortifruti.com.br/_next/image?url=https%3A%2F%2Fhortifrutibr.vtexassets.com%2Farquivos%2Fids%2F155442%2FAbacaxi-Organico-Unidade.jpg%3Fv%3D638671092903500000&w=320&q=75', id: '2', nome: 'Abacaxi', valor: 10.00},
+        {foto:'https://obahortifruti.vtexassets.com/arquivos/ids/4906022/Manga-Palmer.png?v=638265729931630000', id: '1', nome: 'Manga', valor: 2.00},
+        {foto:'https://superprix.vteximg.com.br/arquivos/ids/175201-600-600/Abacaxi--unidade-.png?v=636294199507870000', id: '2', nome: 'Abacaxi', valor: 10.00},
         {foto:'https://vallefrutas.com.br/wp-content/uploads/banana-nanica.png', id: '3', nome: 'Banana', valor: 100.50},
-        {foto:'https://www.hortifruti.com.br/_next/image?url=https%3A%2F%2Fhortifrutibr.vtexassets.com%2Farquivos%2Fids%2F169083%2FMorango.jpg%3Fv%3D638671094409070000&w=1440&q=75', id: '4', nome: 'Morango', valor: 2.00},
-        {foto:'https://acdn-us.mitiendanube.com/stores/746/397/products/maca-argentina1-a86acef532d11addf315221676880019-640-0.jpg', id: '5', nome: 'Maçã', valor: 10.00},
-        {foto:'https://images.tcdn.com.br/img/img_prod/450860/muda_de_pessego_aurora_com_1m_enxertada_684_1_20190611093602.jpg', id: '6', nome: 'Pêssego', valor: 100.50},
-        {foto:'https://bretas.vtexassets.com/arquivos/ids/185357-800-auto?v=638375504073270000&width=800&height=auto&aspect=true', id: '7', nome: 'Mirtilo', valor: 2.00},
-        {foto:'https://images.tcdn.com.br/img/img_prod/450860/muda_de_pera_d_agua_ou_europeia_1m_enxertada_676_1_20190611093602.jpg', id: '8', nome: 'Pêra', valor: 10.00},
-        {foto:'https://cdn.awsli.com.br/496/496853/produto/37100363/my-project-1---2023-05-13t182519-771-moh6ce2zg7.png', id: '9', nome: 'Uva', valor: 100.50},
-        {foto:'https://organicodiniz.com.br/wp-content/uploads/2021/01/pitaya-roxa-800x800-1.jpg', id: '10', nome: 'Pitaya', valor: 2.00},
+        {foto:'https://superprix.vteximg.com.br/arquivos/ids/170267-200-200/Morango--Bandeja-.jpg?v=636094550355970000', id: '4', nome: 'Morango', valor: 2.00},
+        {foto:'https://images.tcdn.com.br/img/img_prod/1284052/maca_gala_kg_171_1_fc81812d677f46905545c2212343fe89.png', id: '5', nome: 'Maçã', valor: 10.00},
+        {foto:'https://images.tcdn.com.br/img/img_prod/1284052/pessego_importado_kg_1033_1_ecb7863e185b00e286961eff53fcca0c.png', id: '6', nome: 'Pêssego', valor: 100.50},
+        {foto:'https://carrefourbrfood.vtexassets.com/arquivos/ids/163244564/349b478a357a4ccb96499beae42ac556.jpg?v=638548054128300000', id: '7', nome: 'Mirtilo', valor: 2.00},
+        {foto:'https://images.tcdn.com.br/img/img_prod/1284052/pera_importada_kg_1659_1_d3dd987ac423a7ffeafbaf46613c8d20.png', id: '8', nome: 'Pêra', valor: 10.00},
+        {foto:'https://phygital-files.mercafacil.com/nossohortifruti/uploads/produto/uva_vit_ria_500g_un_a0520ff1-5a92-442b-9415-c1a45d6326b4.png', id: '9', nome: 'Uva', valor: 100.50},
+        {foto:'https://obahortifruti.vtexassets.com/arquivos/ids/6061541/Pitaya-Polpa-Vermelha.png?v=638438754880270000', id: '10', nome: 'Pitaya', valor: 2.00},
     ])
 
     return(

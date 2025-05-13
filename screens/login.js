@@ -1,6 +1,26 @@
 import {View, Text, Image, Button, TextInput, StyleSheet} from 'react-native';
+import { useState } from 'react';
+import { auth } from '../controller';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 export default function Login({navigation}){
+
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+
+    const verificaLogin = () => {
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            // ...
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+        });
+    }
+
     return(
         <View style={styles.container}>
             <View style={styles.header}>
@@ -13,13 +33,18 @@ export default function Login({navigation}){
                     placeholder="Usuário"
                     placeholderTextColor={'black'}
                     style={styles.txtinput}
+                    value={email}
+                    onChangeText={setEmail}
                 />
                 <TextInput
                     placeholder="Senha"
                     placeholderTextColor={'black'}
                     style={styles.txtinput}
+                    value={senha}
+                    onChangeText={setSenha}
                 />
-                <Button title='Login' color={'#e9186d'} onPress={()=>navigation.navigate('Home')}/>
+                <Button title='Login' color={'#e9186d'} onPress={()=>navigation.navigate('HomeTab')}/>
+                <Button title='Cadastre-se' color={'#e9186d'} onPress={()=>navigation.navigate('Cadastro')}/>
             </View>
         </View>
     )
