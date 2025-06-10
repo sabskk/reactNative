@@ -1,16 +1,17 @@
-/* importar função default(chamadas de "não nomeadas") não precisa de {}, mas outras funções criadas precisa(chamadas de "nomeadas") */
-import Home from './screens/home';
-import Login from './screens/login';
-import Cadastro from './screens/cadastro';
-import Feed from './screens/feed';
-import Count from './screens/contador';
-import Produto from './screens/produtos';
-
 import 'react-native-gesture-handler';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
+
+/* importar função default(chamadas de "não nomeadas") não precisa de {}, mas outras funções criadas precisa(chamadas de "nomeadas") */
+import Home from './screens/home';
+import Login from './screens/login';
+import Register from './screens/register';
+import Feed from './screens/feed';
+import Count from './screens/count';
+import Product from './screens/product';
+import Cadastrar from './screens/cadastrar';
 
 import Feather from '@expo/vector-icons/Feather';
 
@@ -26,7 +27,7 @@ export default function App() {
       headerTintColor: 'white',
     }}>
         <Stack.Screen name='Login' component={Login}/>
-        <Stack.Screen name='Cadastro' component={Cadastro}/>
+        <Stack.Screen name='Register' component={Register}/>
         <Stack.Screen name='HomeTab' component={BottomTabs} options={{headerShown:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
@@ -57,17 +58,23 @@ function BottomTabs(){
         <Feather name="file-text" size={24} color="white" />
       }} />
 
-      <BottomTab.Screen name='Contador' component={Count} 
+      <BottomTab.Screen name='Cadastrar' component={Cadastrar} 
       options={{
         tabBarIcon:() =>
-        <Feather name="plus-circle" size={24} color="white" />
+        <Feather name="file-text" size={24} color="white" />
       }} />
 
-      <BottomTab.Screen name='Produto' component={Produto} 
+      <BottomTab.Screen name='Product' component={Product} 
       options={{
         tabBarIcon:() =>
         <Feather name="shopping-cart" size={24} color="white" />
       }} />
+
+      {/* <BottomTab.Screen name='Count' component={Count} 
+      options={{
+        tabBarIcon:() =>
+        <Feather name="plus-circle" size={24} color="white" />
+      }} /> */}
     </BottomTab.Navigator>
   );
 }
